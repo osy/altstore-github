@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 require('./lib/repository.js')
   .then(data => {

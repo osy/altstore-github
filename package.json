@@ -1,19 +1,29 @@
 {
   "name": "altstore-github",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate AltStore repository from Github releases",
   "main": "index.js",
   "scripts": {
     "prestart": "if [ ! -d node_modules ]; then npm install; fi",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["altstore", "github"],
+  "bin": {
+    "altstore-github": "index.js"
+  },
+  "keywords": [
+    "altstore",
+    "github"
+  ],
   "author": "osy",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/osy86/altstore-github/issues"
   },
   "homepage": "https://github.com/osy86/altstore-github",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osy86/altstore-github.git"
+  },
   "dependencies": {
     "@octokit/rest": "^17.1.3",
     "convict": "^5.2.0",

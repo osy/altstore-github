@@ -24,6 +24,10 @@ Alternatively, you can output the repository JSON directly:
 ```
 node index.js --config custom.json
 ```
+or with `npx` (in another directory):
+```
+npx --config custom.json
+```
 
 The repository JSON will be written to standard output.
 
