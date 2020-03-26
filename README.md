@@ -22,11 +22,11 @@ npm start -- --ip 0.0.0.0 --port 8080 --config custom.json
 
 Alternatively, you can output the repository JSON directly:
 ```
-node index.js --config custom.json
+node index.js --config custom.json > repo.json
 ```
 or with `npx` (in another directory):
 ```
-npx --config custom.json
+npx altstore-github --config custom.json > repo.json
 ```
 
 The repository JSON will be written to standard output.
