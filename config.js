@@ -73,6 +73,16 @@ var config = convict({
         format: String,
         default: null
       },
+      skipPrerelease: {
+        doc: "If true, any github release marked 'pre-release' will be skipped",
+        format: Boolean,
+        default: false
+      },
+      beta: {
+        doc: "App is labeled as beta",
+        format: Boolean,
+        default: false
+      },
       developerName: {
         doc: "App developer",
         format: String,
