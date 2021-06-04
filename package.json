@@ -17,12 +17,12 @@
   "author": "osy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/osy86/altstore-github/issues"
+    "url": "https://github.com/osy/altstore-github/issues"
   },
-  "homepage": "https://github.com/osy86/altstore-github",
+  "homepage": "https://github.com/osy/altstore-github",
   "repository": {
     "type": "git",
-    "url": "https://github.com/osy86/altstore-github.git"
+    "url": "https://github.com/osy/altstore-github.git"
   },
   "dependencies": {
     "@octokit/rest": "^17.1.3",
