@@ -7,6 +7,7 @@
     {
       "name": "GBA4iOS",
       "bundleIdentifier": "com.rileytestut.GBA4iOS",
+      "filename": "gba4ios.ipa",
       "githubOwner": "rileytestut",
       "githubRepository": "Delta",
       "developerName": "Riley Testut",
