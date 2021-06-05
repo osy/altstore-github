@@ -1,6 +1,6 @@
 {
   "name": "altstore-github",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Generate AltStore repository from Github releases",
   "main": "index.js",
   "scripts": {
