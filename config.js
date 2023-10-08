@@ -37,16 +37,9 @@ var config = convict({
     arg: "port"
   },
   repo: {
-    name: {
-      doc: "Repository name",
-      format: String,
-      default: "AltStore Demo Source"
-    },
-    identifier: {
-      doc: "Repository identifier",
-      format: String,
-      default: "com.rileytestut.AltStore.Demo"
-    }
+    doc: "Repository information",
+    format: Object,
+    default: null
   },
   apps: {
     doc: "Apps in the repository.",
@@ -96,6 +89,7 @@ var config = convict({
       subtitle: {
         doc: "App subtitle",
         format: String,
+        nullable: true,
         default: null
       },
       localizedDescription: {
@@ -111,12 +105,26 @@ var config = convict({
       tintColor: {
         doc: "App color",
         format: String,
+        nullable: true,
+        default: null
+      },
+      minOSVersion: {
+        doc: "App minimum iOS version support",
+        format: String,
+        nullable: true,
+        default: null
+      },
+      appPermissions: {
+        doc: "App permissions",
+        format: Object,
+        nullable: true,
         default: null
       },
       screenshotURLs: {
         doc: "App screenshots",
         format: Array,
-        default: []
+        nullable: true,
+        default: null
       }
     }
   },
@@ -143,27 +151,38 @@ var config = convict({
       tintColor: {
         doc: "News tint color",
         format: String,
+        nullable: true,
         default: null
       },
       imageURL: {
         doc: "News image URL",
         format: String,
-        default: ""
+        nullable: true,
+        default: null
       },
       appID: {
         doc: "News associated bundle id",
         format: String,
+        nullable: true,
         default: null
       },
       date: {
         doc: "News date in YYYY-MM-DD format",
         format: String, //TODO: check date format
+        nullable: true,
         default: null
       },
       notify: {
         doc: "Notify user of this news item",
         format: Boolean,
+        nullable: true,
         default: false
+      },
+      url: {
+        doc: "Link to open when tapped",
+        format: String,
+        nullable: true,
+        default: null
       }
     }
   }
